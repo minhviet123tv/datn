@@ -1,0 +1,30 @@
+#loginspring {
+	border: 0px solid green;
+	margin: auto;
+	text-align: center;
+}
+
+#loginspring th {
+	border: 0px solid;
+}
+
+#loginspring td {
+	border: 0px solid;
+}
+
+#loginsuccess {
+	border: 0px solid;
+	margin: auto;
+	text-align: center;
+}
+
+#loginsuccess th {
+	border: 1px solid;
+	padding: 10px;
+}
+
+#loginsuccess td {
+	border: 1px solid;
+	padding: 10px;
+}
+

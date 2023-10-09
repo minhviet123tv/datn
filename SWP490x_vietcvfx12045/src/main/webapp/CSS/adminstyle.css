@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+
+#adminwelcome {
+	text-align: left;
+}
+
+.containeradmin {
+	display: flex;
+	justify-content: space-between;
+ 	margin-left: -1rem;
+	flex-flow: row wrap;
+}
+
+.adminleft {
+	flex: 1 6;
+	background-color: #8080ff;
+	text-align: center;
+	min-height: 1200px;
+	margin-left: 0px;
+}
+
+.adminright {
+	flex: 6 1;
+	background-color: #ece3ff;
+	width: 100%;
+}
+
+.containeradmin2 {
+	display: flex;
+	justify-content: space-between;
+ 	margin-left: -1rem;
+	flex-flow: row wrap;
+}
+
+.adminleft2 {
+	flex: 1 6;
+	background-color: #ece3ff;
+	text-align: center;
+	height: 1200px;
+}
+
+.adminright2 {
+	flex: 6 1;
+	background-color: #f0ffcf;
+	height: 1200px;
+}
+
+.textheaderamdinleft {
+	color: #026b1b; 
+	text-shadow: 0px 0px 10px #fff;
+}
+
+.admintable {
+	width: 95%;
+	padding: 10px;
+	margin: auto;
+	text-align: center;
+}
+
+.admintable,th, td {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+.admintable1 {
+	width: 95%;
+	padding: 10px;
+	margin: auto;
+	text-align: center;
+}
+
+.admintable1 tr:hover {
+	background-color: #fff1b0; /* ffd200 */
+}
+
+.colorthadmin {
+	background-color: #cf73fa;
+	padding: 10px;
+}
+
+.editaccount {
+	width: 50%;
+	padding: 10px;
+	margin: auto;
+	text-align: left;
+}
+
+.editaccount,th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.ck-editor__editable_inline {
+	min-height: 350px;
+	width: 50%;
+}
+
+.searchtable {
+	padding: 5px;
+	border: 0px solid black;
+	border-collapse: collapse;
+}
+
+/* Footer của Admin đang dùng chung với footer của Index */
+/* .footer {
+	margin: auto;
+	width: 100%;
+ 	text-align: center;
+  	background: white;
+  	border: 0px solid black;
+}
+
+.footercard {
+	float:left; 
+	width:50%; 
+	background-color: gray;
+	text-align: center;
+	box-shadow: 1px 1px 3px 1px #888888;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+ */
+.card {
+	position:relative;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	min-width:0;
+	word-wrap:break-word;
+	background-color:white;
+	background-clip:border-box;
+	border:1px solid rgba(0,0,0,.125);
+	border-radius:.25rem
+}
+
+.textalignleft {
+	text-align: left;
+}
+
+/* PHÂN TRANG */
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  background-color: white;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.barcontentadmin {
+	background-color: white;
+	text-align: center;
+	padding: 8px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px 1px #888888;
+	width: 95%;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.contentadmin {
+		width: 97%;
+		margin: auto;
+	 }
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1600px) {
+	.adminleft {
+	min-height: 400px;
+	}
+}
+@media screen and (max-width: 800px) {
+	 .footercard {
+		width:100%;
+		margin-top: 20px;
+	}
+	
+	.editaccount {
+		width: 95%;
+	}
+	
+	.adminleft {
+		flex: none;
+		min-height: 400px;
+		width: 100%;
+	}
+	
+	.adminright {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	
+}

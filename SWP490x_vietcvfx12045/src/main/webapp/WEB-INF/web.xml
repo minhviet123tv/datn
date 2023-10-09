@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>SWP490x_vietcvfx12045</display-name>
+  
+  <!-- Các cấu hình cần thiết cho Spring-->
+  <absolute-ordering/>
+  
+    <servlet>
+      <servlet-name>login2</servlet-name> <!-- Tên cho lớp TRUNG TÂM XỬ LÝ DispatcherServlet, nhận các yêu cầu của URL và điều hướng tới Controller -->
+      <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class> <!-- Chính là lớp nhận các request, parameter ở URL và điều hướng tới @RequestMapping của Controller-->
+      <load-on-startup>1</load-on-startup>
+   </servlet>
+
+   <servlet-mapping>
+      <servlet-name>login2</servlet-name> <!-- Tên cho lớp trung tâm xử lý DispatcherServlet -->
+      <url-pattern>*.html</url-pattern> <!-- Nhận các value .html để thân thiện người dùng (Đặt tên các value @RequestMapping thành .html ). Nếu không có thể để mình "/" và trong @RequestMapping lại đặt value="/" hoặc value="/tên điều hướng"-->
+   </servlet-mapping> 
+  
+   <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>/WEB-INF/login2-servlet.xml</param-value> <!-- Tên thực tế của các trang không phải .html mà là đã cấu hình .jsp tại đây -->
+  </context-param>
+  
+  <listener>
+  	<listener-class>
+  		org.springframework.web.context.ContextLoaderListener
+  	</listener-class>
+  </listener>
+	 
+	<!-- Số phút muốn tự động hủy session,thời gian mặc định của mỗi phiên làm việc session với ứng dụng java web trong khoảng tầm 30 phút. lưu mãi theo trình duyệt là -1 -->
+  	<session-config>
+        <session-timeout> -1 </session-timeout>
+	</session-config>
+	
+</web-app>
